@@ -1,0 +1,111 @@
+/* styles.css */
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background: url('OIG2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden; /* Prevents body scroll */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    background: rgba(5, 10, 20, 0.9); /* Darker, more black with low blue saturation */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 95%; /* Adjusted width for better responsiveness */
+    max-width: 600px;
+    max-height: 94vh;
+    overflow: auto; /* Adds a scrollbar for the main container */
+}
+
+/* Header styling */
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Paragraph styling */
+p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Table styling */
+.account-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.character-name-header, .realm-header {
+    width: 40%; /* Adjusted width for headers */
+    text-align: left;
+    padding: 10px;
+}
+
+.character-name-cell, .realm-cell {
+    width: 40%; /* Adjusted width for cells */
+    text-align: left;
+    padding: 10px;
+}
+
+th, td {
+    border: 1px solid white;
+}
+
+th {
+    background-color: #0a0f14; /* Darker, more black with low blue saturation */
+    color: white;
+}
+
+td {
+    background-color: #141a21; /* Darker, more black with low blue saturation */
+    color: white;
+}
+
+th[colspan='2'] {
+    text-align: center;
+    background-color: #050a14; /* Darker, more black with low blue saturation for header */
+}
+
+/* Alternate row colors */
+tr:nth-child(odd) {
+    background-color: #10161f; /* Slightly different darker color for odd rows */
+}
+
+/* Custom scrollbar styling */
+main::-webkit-scrollbar {
+    width: 12px;
+}
+
+main::-webkit-scrollbar-track {
+    background: rgba(5, 10, 20, 0.9); /* Matches the main container background */
+    border-radius: 10px;
+}
+
+main::-webkit-scrollbar-thumb {
+    background-color: #606c76; /* Lighter color for better visibility */
+    border-radius: 10px;
+    border: 1px solid rgba(5, 10, 20, 0.9); /* Adds space between scrollbar thumb and track */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    main {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .character-name-header, .realm-header, .character-name-cell, .realm-cell {
+        width: 50%; /* Adjusted widths for smaller screens */
+    }
+}
