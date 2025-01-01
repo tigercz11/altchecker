@@ -7,6 +7,5 @@ uploade database.py - login to FTP on webiste, convert database file to text fil
 then I have provided index.php with styles.css as webside, that shows the characters under accounts in readable way
 
 All text files have some characters for example.
-You can check how the website looks on my own website with all of this
 
-https://tigercz.xf.cz/
+
